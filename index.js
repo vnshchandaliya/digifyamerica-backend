@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 // CORS origin ko conditionally set karein
 const allowedOrigins = [
   'http://localhost:3000', // Local frontend
-  'https://www.digifyameica.com' // Live frontend
+  'https://demodigify.mycreativewebsite.com/' // Live frontend
 ];
 
 app.use(cors({
