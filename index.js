@@ -31,8 +31,8 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: "info@jyotfoundation.in",
-        pass: "Jyotfoundation@123"
+        user: "programinghub733@gmail.com",
+        pass: "nuavxccncxixwpwv"
     },
     logger: true,   // debug ke liye
     debug: true     // debug ke liye
@@ -53,7 +53,7 @@ app.post('/send-email', async (req, res) => {
     try {
         const { fname, lname, phone, email, message } = req.body;
         const mailOptions = {
-            from: 'info@jyotfoundation.in',
+            from: 'programinghub733@gmail.com',
             to: 'info@digifyamerica.com',
             subject: 'Digify America  ',
             text: `First Name: ${fname}\nLast Name: ${lname}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`
